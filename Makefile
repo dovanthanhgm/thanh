@@ -33,3 +33,9 @@ admin:
 rm:
 	rmdir __pycache__ /s /q
 	del db.sqlite3
+
+.PHONY: up
+up:
+	git add .
+	git commit -m up
+	git push
