@@ -1,0 +1,12 @@
+{% extends 'mock/layouts/error_base.html' %}
+
+{% block 'title' %}503{% endblock 'title' %}
+
+{% block 'content' %}
+<h1>503</h1>
+<h3>This Site Is Getting Up In Few Minutes.</h3>
+<p>Please Try After Some Time</p>
+<div class="pt-20 mx-auto max-width-200">
+  <a href="{% url 'theme:index' %}" class="btn btn-primary btn-block btn-lg">Back To Home</a>
+</div>
+{% endblock 'content' %}

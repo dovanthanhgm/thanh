@@ -21,3 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 ##################################################
+from django.urls import include
+
+urlpatterns += [
+    path('theme/', include('theme.urls')),
+]

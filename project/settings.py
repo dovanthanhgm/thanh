@@ -131,3 +131,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
 AUTH_PASSWORD_VALIDATORS = []
 TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'templates')]
+
+INSTALLED_APPS += ['theme',]
